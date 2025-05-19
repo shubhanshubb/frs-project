@@ -1,0 +1,75 @@
+<?php
+// array for JSON response
+$response = array();
+// check for required fields
+if (isset($_REQUEST['pkg'])) {
+
+    if (strcmp($_REQUEST['pkg'],"caller.blockcalles.calltrack.truecaller")==0) {
+        // successfully inserted into database
+        $response["success"] = 1;
+        $response["newversion"] = "1.0";
+        $response["newappurl"] = "play.com";
+
+        $response["app_id_ad_unit_id"] = "ca-app-pub-7557706409539485~93013808328";
+
+        $response["banner"] = "admob";
+        $response["banner_show"]="on";
+        $response["bannermain"] = "ca-app-pub-3940256099942544/6300978111";
+        $response["bannermains"] = "ca-app-pub-3940256099942544/6300978111";
+        $response["bannermainr"] = "ca-app-pub-3940256099942544/6300978111";
+        $response["bannermainrs"] = "ca-app-pub-3940256099942544/6300978111";
+
+        $response["interstitial"] = "admob";
+        $response["interstitialmain"] = "ca-app-pub-3940256099942544/1033173712";
+        $response["interstitialmains"] = "ca-app-pub-3940256099942544/1033173712";
+        $response["interstitialmainr"] = "ca-app-pub-3940256099942544/1033173712";
+        $response["splash"] = "openapp";
+        $response["interstitialsplash"] = "yes";
+        $response["interstitialsplashid"] = "ca-app-pub-3940256099942544/1033173712";
+
+        $response["openapp_ads_enabled"] = "yes";
+        $response["openappid"] = "ca-app-pub-3940256099942544/3419835294";
+
+        $response["native_ads_enabled"] = "yes";
+        $response["native"] = "admob";
+        $response["nativeid"] = "ca-app-pub-3940256099942544/2247696110";
+
+
+           $response["vpn"] = "yes";
+
+
+        $rn = rand(1,2);
+        switch ($rn) {
+          case "1":
+                $response["selectedCountry"] = "ch";
+            break;
+          case "2":
+                $response["selectedCountry"] = "ch";
+            break;
+
+          default:
+            $response["selectedCountry"] = "ch";
+        }
+
+        $response["BASE_HOST"] = "https://d2isj403unfbyl.cloudfront.net";
+        $response["BASE_CARRIER_ID"] = "sah_alphavpnproject";
+        $response["BASE_OAUTH_METHOD"] = "anonymous";
+        $response["SHARED_PREFS"] = "NORTHGHOST_SHAREDPREFS";
+        $response["STORED_HOST_URL_KEY"] = "com.northghost.afvclient.STORED_HOST_KEY";
+        $response["STORED_CARRIER_ID_KEY"] = "com.northghost.afvclient.CARRIER_ID_KEY";
+
+        $response["NATIVE_ADS_FREQUENCY"] = 1;
+        $response["NATIVE_ADS_FREQUENCY_MAX"] = 1;
+
+        $response["ADMOB_INTERSTITIAL_FREQUENCY"] = 1;
+        $response["WHATSAPP_SHARE_FREQUENCY"] = 8;
+        $response["message"] = "successfully";
+
+
+        // echoing JSON response
+        echo json_encode($response);
+
+    }
+}
+
+

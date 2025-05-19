@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "800220063368",
+    "project_id": "wms-dev-4cdc1",
+    "storage_bucket": "wms-dev-4cdc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800220063368:android:8f12af7c470a7489a1213d",
+        "android_client_info": {
+          "package_name": "com.fsr.wms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800220063368-60p9th20n9r4chi929rf90lec16k5lsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdYHGFweH6BpxYOxJiiiWlWi6O12msvL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800220063368-60p9th20n9r4chi929rf90lec16k5lsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800220063368:android:24c3b691563d1fe2a1213d",
+        "android_client_info": {
+          "package_name": "com.wms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800220063368-60p9th20n9r4chi929rf90lec16k5lsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdYHGFweH6BpxYOxJiiiWlWi6O12msvL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800220063368-60p9th20n9r4chi929rf90lec16k5lsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
